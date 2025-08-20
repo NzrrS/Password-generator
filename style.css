@@ -5,7 +5,6 @@
   font-family: Arial, sans-serif;
 }
 
-
 body {
   display: flex;
   justify-content: center;
@@ -14,9 +13,8 @@ body {
   background: #f4f6f9;
   color: #070505;
   flex-direction: column;
-  
 }
-h1{
+h1 {
   margin-bottom: 30px;
 }
 

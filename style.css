@@ -1,7 +1,15 @@
 h1 {
   margin-bottom: 30px;
 }
-
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f4f6f9;
+  color: #070505;
+  flex-direction: column;
+}
 .container {
   position: relative;
   background: rgba(0, 0, 0, 0.6);

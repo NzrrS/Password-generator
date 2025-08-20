@@ -1,4 +1,16 @@
+h1 {
+  margin-bottom: 30px;
+}
 
+.container {
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  width: 350px;
+}
 .passContainer {
   display: flex;
   flex-direction: column;

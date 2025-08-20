@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f4f6f9;
+  color: #070505;
+  flex-direction: column;
+  
+}
+h1{
+  margin-bottom: 30px;
+}
+
+.container {
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  width: 350px;
+}
+
+.passContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.inputRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.inputRow input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+.inputRow button {
+  border: none;
+  background: #e9ecef;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.inputRow button:hover {
+  background: #d1d9e0;
+}
+
+.passContainer input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.passContainer div {
+  display: flex;
+  gap: 8px;
+}
+
+.passContainer button {
+  border: none;
+  background: #e9ecef;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.passContainer button:hover {
+  background: #d1d9e0;
+}
+
+/* STRENGTH BAR */
+
+.strength {
+  margin-top: 10px;
+  background: #e9ecef;
+  height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.strength-bar {
+  height: 100%;
+  width: 0%;
+  transition: all 0.3s ease;
+}
+.weak {
+  width: 20%;
+  background-color: red;
+}
+.medium {
+  width: 50%;
+  background-color: orange;
+}
+.strong {
+  width: 100%;
+  background-color: green;
+}
+
+/* STRENGTH BAR */
+
+.passCustomize {
+  margin-top: 20px;
+}
+
+.passCustomize hr {
+  margin: 15px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.passCustomize p {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.passCustomize input[type="number"],
+.passCustomize input[type="range"] {
+  width: 100%;
+}
+label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.infoTooltip {
+  background-image: url("assetes/images/info-icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  margin-left: 5px;
+}
+
+.tooltipText {
+  display: none;
+  position: absolute;
+  top: -5px;
+  left: 110%;
+  width: 200px;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #d6dbdb;
+  border-radius: 5px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  text-align: left;
+}
+
+.infoTooltip:hover .tooltipText {
+  display: inline-block;
+}

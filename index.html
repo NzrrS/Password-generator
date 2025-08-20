@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password-Generator</title>
+    <!-- Styling file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1>Your password generator</h1>
+    <div class="container">
+      <div class="passContainer">
+        <div class="inputRow">
+          <input type="text" id="password" class="" />
+          <button class="copyBtn"><i class="fa-regular fa-copy"></i></button>
+          <button class="genreateBtn">
+            <i class="fa-solid fa-repeat"></i>
+          </button>
+        </div>
+        <div class="strength">
+          <div id="strength-bar" class="strength-bar"></div>
+        </div>
+      </div>
+
+      <div class="passCustomize">
+        <hr />
+        <p>Password Length</p>
+        <div class="inputRow">
+          <input type="number" id="passLength" value="12" />
+          <input
+            type="range"
+            id="passRangeLength"
+            min="1"
+            max="32"
+            value="12"
+          />
+        </div>
+
+        <div class="radioRow">
+          <label>
+            <input type="radio" name="preference" value="say" />
+            Easy to Say
+            <span class="infoTooltip">
+              <span class="tooltipText"
+                >Avoid numbers and special characters</span
+              >
+            </span>
+          </label>
+
+          <label>
+            <input type="radio" name="preference" value="read" />
+            Easy to Read
+            <span class="infoTooltip">
+              <span class="tooltipText">Avoid Hard special characters</span>
+            </span>
+          </label>
+
+          <label>
+            <input type="radio" name="preference" value="all" checked />
+            All characters
+            <span class="infoTooltip">
+              <span class="tooltipText">All characters</span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- Script file  -->
+    <script src="script.js"></script>
+  </body>
+</html>
